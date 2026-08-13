@@ -10,7 +10,7 @@ This package is Go implementation of [ai's](https://github.com/ai) [nanoid](http
 
 **Safe.** It uses cryptographically strong random generator.
 
-**Compact.** It uses more symbols than UUID (`A-Za-z0-9_-`) and has the same number of unique options in just 22 symbols instead of 36.
+**Compact.** It uses more symbols than UUID (`A-Za-z0-9_-`) and has a UUID v4-like collision probability in 21 symbols instead of 36.
 
 **Fast.** Nanoid is as fast as UUID but can be used in URLs.
 
@@ -40,6 +40,17 @@ Generate ID with a custom alphabet and length
 ``` go
 id, err := gonanoid.Generate("abcde", 54)
 ```
+
+The default size and URL-safe alphabet are aligned with Nano ID 6:
+
+```go
+fmt.Println(gonanoid.DefaultSize)  // 21
+fmt.Println(gonanoid.URLAlphabet) // A-Za-z0-9_- in Nano ID's compression-optimized order
+```
+
+Custom alphabets may contain 1 to 256 Unicode characters. A size of `0`
+returns an empty ID, matching Nano ID 6. Negative sizes and invalid alphabets
+return an error.
 
 ## Notice
 
