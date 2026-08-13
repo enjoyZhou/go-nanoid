@@ -1,10 +1,10 @@
 # Go Nanoid
 
-[![CI](https://github.com/matoous/go-nanoid/workflows/CI/badge.svg)](https://github.com/matoous/go-nanoid/actions) 
-[![GoDoc](https://godoc.org/github.com/matoous/go-nanoid?status.svg)](https://godoc.org/github.com/matoous/go-nanoid)
-[![Go Report Card](https://goreportcard.com/badge/github.com/matoous/go-nanoid)](https://goreportcard.com/report/github.com/matoous/go-nanoid)
-[![GitHub issues](https://img.shields.io/github/issues/matoous/go-nanoid.svg)](https://github.com/matoous/go-nanoid/issues)
-[![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)](https://github.com/matoous/go-nanoid/LICENSE)
+[![CI](https://github.com/enjoyZhou/go-nanoid/workflows/CI/badge.svg)](https://github.com/enjoyZhou/go-nanoid/actions)
+[![Go Reference](https://pkg.go.dev/badge/github.com/enjoyZhou/go-nanoid/v2.svg)](https://pkg.go.dev/github.com/enjoyZhou/go-nanoid/v2)
+[![Go Report Card](https://goreportcard.com/badge/github.com/enjoyZhou/go-nanoid/v2)](https://goreportcard.com/report/github.com/enjoyZhou/go-nanoid/v2)
+[![GitHub issues](https://img.shields.io/github/issues/enjoyZhou/go-nanoid.svg)](https://github.com/enjoyZhou/go-nanoid/issues)
+[![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)](https://github.com/enjoyZhou/go-nanoid/blob/main/LICENSE)
 
 This package is Go implementation of [ai's](https://github.com/ai) [nanoid](https://github.com/ai/nanoid)!
 
@@ -31,7 +31,7 @@ scope limitations.
 Via go get tool
 
 ``` bash
-$ go get github.com/matoous/go-nanoid/v2
+$ go get github.com/enjoyZhou/go-nanoid/v2@v2.0.0
 ```
 
 ## Usage

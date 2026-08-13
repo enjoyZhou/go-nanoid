@@ -1,3 +1,3 @@
 go 1.23
 
-module github.com/matoous/go-nanoid/v2
+module github.com/enjoyZhou/go-nanoid/v2
