@@ -14,6 +14,13 @@ This package is Go implementation of [ai's](https://github.com/ai) [nanoid](http
 
 **Fast.** Nanoid is as fast as UUID but can be used in URLs.
 
+The Nano ID 6 alignment also removed repeated alphabet conversions from the
+default generator. On an Apple M1 Pro with Go 1.24.6, the recorded `New()`
+microbenchmark improved from 3264.7 ns/op and 24 allocations to 402.6 ns/op
+and 3 allocations. Results are environment-specific; see the reproducible
+[upgrade performance report](./PERFORMANCE.md) for raw runs, commands, and
+scope limitations.
+
 > [!NOTE]  
 > There's little to no development on this repo, intentionally. It does what it needs to do. Bug reports are welcomed, features _might_ be implemented.
 >
