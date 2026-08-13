@@ -5,7 +5,7 @@ import (
 	"testing"
 	"unicode/utf8"
 
-	gonanoid "github.com/enjoyZhou/go-nanoid/v2"
+	gonanoid "github.com/enjoyZhou/go-nanoid/v6"
 )
 
 func requireNoError(t *testing.T, err error) {
