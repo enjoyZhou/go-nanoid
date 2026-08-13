@@ -5,6 +5,10 @@ Date: 2026-08-13
 This report records the functional and performance impact of aligning the Go
 implementation with Nano ID 6.0.1.
 
+The public Go module for this compatibility baseline is
+`github.com/enjoyZhou/go-nanoid/v6@v6.0.1`. The repository also publishes the
+matching upstream-style tag `6.0.1`.
+
 ## Compared revisions
 
 | Version | Revision | Description |
@@ -136,4 +140,3 @@ random state.
   The observed gap is nevertheless much larger than the run-to-run variance.
 - Performance does not provide uniqueness by itself. Applications must still
   enforce appropriate uniqueness constraints and retry on an actual collision.
-

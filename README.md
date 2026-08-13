@@ -1,12 +1,14 @@
 # Go Nanoid
 
 [![CI](https://github.com/enjoyZhou/go-nanoid/workflows/CI/badge.svg)](https://github.com/enjoyZhou/go-nanoid/actions)
-[![Go Reference](https://pkg.go.dev/badge/github.com/enjoyZhou/go-nanoid/v2.svg)](https://pkg.go.dev/github.com/enjoyZhou/go-nanoid/v2)
-[![Go Report Card](https://goreportcard.com/badge/github.com/enjoyZhou/go-nanoid/v2)](https://goreportcard.com/report/github.com/enjoyZhou/go-nanoid/v2)
+[![Go Reference](https://pkg.go.dev/badge/github.com/enjoyZhou/go-nanoid/v6.svg)](https://pkg.go.dev/github.com/enjoyZhou/go-nanoid/v6)
+[![Go Report Card](https://goreportcard.com/badge/github.com/enjoyZhou/go-nanoid/v6)](https://goreportcard.com/report/github.com/enjoyZhou/go-nanoid/v6)
 [![GitHub issues](https://img.shields.io/github/issues/enjoyZhou/go-nanoid.svg)](https://github.com/enjoyZhou/go-nanoid/issues)
 [![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)](https://github.com/enjoyZhou/go-nanoid/blob/main/LICENSE)
 
-This package is Go implementation of [ai's](https://github.com/ai) [nanoid](https://github.com/ai/nanoid)!
+This package is a Go implementation of [ai's](https://github.com/ai)
+[Nano ID](https://github.com/ai/nanoid). Its release number follows the
+upstream Nano ID compatibility baseline; this release targets 6.0.1.
 
 **Safe.** It uses cryptographically strong random generator.
 
@@ -31,8 +33,13 @@ scope limitations.
 Via go get tool
 
 ``` bash
-$ go get github.com/enjoyZhou/go-nanoid/v2@v2.0.0
+$ go get github.com/enjoyZhou/go-nanoid/v6@v6.0.1
 ```
+
+The repository publishes two tags for each synchronized release:
+
+- `6.0.1`, matching the upstream Nano ID tag exactly;
+- `v6.0.1`, required by Go modules for the `/v6` semantic import path.
 
 ## Usage
 
